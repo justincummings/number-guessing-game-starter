@@ -5,12 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Guess A Number!</title>
+  <link rel="stylesheet" href="styles/styles.css">
   <script src="vendors/jquery.min.js"></script>
   <script src="scripts/client.js"></script>
-  <link rel="stylesheet" href="styles/styles.css">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <h1>YOUR GAME HERE!</h1>
+    <h4>Number of Guesses: <span id="guess-counter">0</span></h4>
+    <input id="justin-input" type="text" placeholder="Justin">
+    <input id="zane-input" type="text" placeholder="Zane">
+    <input id="sparky-input" type="text" placeholder="Sparky">
+    <button id="submit-guess">? GUESS ?</button>
+
+    <h4>Justins Guess: <span id="justin-last-guess"></span></h4>
+    <h4>Zanes Guess: <span id="zane-last-guess"></span></h4>
+    <h4>Sparkys Guess: <span id="sparky-last-guess"></span></h4>
+
+    <button id="reset-button">Reset</button>
+
 </body>
 </html>
