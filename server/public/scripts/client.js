@@ -47,23 +47,18 @@ function collectInputs () {
     $('#sparky-input').val('');
 
     guessCounter ++;
-
+    $('#guess-counter').empty();
+    $('#guess-counter').val(guessCounter);
   }
 }
 
-
-
-  function resetHandler () {
-    $(`#justin-last-guess`).empty();
-    $(`#zane-last-guess`).empty();
-    $(`#sparky-last-guess`).empty();
-    askForRandomNumber();
-    guessCounter=0;
-  }
-
-
-  
-
+function resetHandler () {
+  $(`#justin-last-guess`).empty();
+  $(`#zane-last-guess`).empty();
+  $(`#sparky-last-guess`).empty();
+  askForRandomNumber();
+  guessCounter=0;
+}
 
 function askForRandomNumber() {
   $.ajax({
